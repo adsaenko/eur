@@ -1,0 +1,9 @@
+spring:
+    datasource:
+        url: jdbc:postgresql://192.168.1.4:5432/Test
+        username: postgres
+        password: asaenko
+        driver-class-name: org.postgresql.Driver
+        server.address: 192.168.1.4
+server:
+  port: ${vcap.application.port:8076}
